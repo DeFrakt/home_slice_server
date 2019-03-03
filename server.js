@@ -19,8 +19,8 @@ app.use(session({
 //CORS ( Cross-Origin Resource Sharing )
 app.use(cors());
 app.set('view engine', 'ejs');
-app.listen(8000, function() {
-    console.log("listening on port 8000");
+app.listen(process.env.PORT || 8080, function() {
+    console.log("listening on port 8080");
 })
 //routes
 require('./server/config/routes.js')(app);
