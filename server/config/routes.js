@@ -6,7 +6,7 @@ module.exports = function(app){
         ccTransaction.add(req, res);
     })
     //point to Angular index
-    app.all('*', function(req, res) {
-       res.sendFile(path.resolve('./public/dist/public/index.html'));
-    })
+    // app.all('*', function(req, res) {
+    //    res.sendFile(path.resolve('./public/dist/public/index.html'));
+    // })
 }

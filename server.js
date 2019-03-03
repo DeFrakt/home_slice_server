@@ -10,12 +10,6 @@ app.use(express.static( __dirname + '/public/dist/public' ));
 app.use(bodyParser.json());
 app.use(flash());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(session({
-    secret: 'keyboardkitteh',
-    resave: false,
-    saveUninitialized: false,
-    cookie: { maxAge: 60000 }
-  }))
 //CORS ( Cross-Origin Resource Sharing )
 app.use(cors());
 app.set('view engine', 'ejs');
